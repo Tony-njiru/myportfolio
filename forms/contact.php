@@ -1,11 +1,7 @@
 <?php
-  https:bootstrapmade.com/php-email-form/
-  
+    $receiving_email_address = 'anthonynjiru3@gmail.com';
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'anthonynjiru3@gmail.com';
-
-  if( file_exists($php_email_form = '..vendor/php-email-form/'php-email-form.php )) {
+  if( file_exists($php_email_form = '..vendor/php-email-form/validate.js')) {
     include( $php_email_form );
   } else {
     die( 'Unable to load the "PHP Email Form" Library!');
@@ -21,13 +17,12 @@
 
   
   $contact->smtp = array(
-    'host' => 'anthonynjiru3@gmail.com',
-    'username' => 'anthonynjiru3',
-    'password' => 'pass',
+    'host' => 'stmp.gmail.com',
+    'username' => 'anthonynjiru3@gmail.com',
+    'password' => '12474684',
     'port' => '587'
   );
   
-
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
