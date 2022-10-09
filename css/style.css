@@ -211,9 +211,9 @@ a:hover {
   width: 50px;
   font-size: 1.2rem;
   border-radius: 50%;
-  line-height: 4.6;
+  line-height: 1.6;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 4px hwb(143 0% 0%);
+  box-shadow: 0 0 0 3px hwb(143 0% 0%);
   transition: all 500ms ease;
 }
 .socials .ico-circle:hover {
